@@ -33,8 +33,7 @@ rankhospital <- function(state,outcome,num="best"){
         if (num == "best") num <- 1
         if (is.integer(num) & num > nrow(red_data)) return(NA)
         
-        # row index at which has minimum deaths
-        
+        # ranking of hospitals according for outcome
         sort_seq <- order(red_data[[outcome]],red_data$Hospital.Name)
         
         if (num == "worst") 

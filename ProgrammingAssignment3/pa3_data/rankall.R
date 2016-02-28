@@ -1,3 +1,11 @@
+# Function to get hospital with desired rank for given outcome in each state
+##Arguments
+### outcume: a character with possible values "heart attack" , "heart faliure", "pneumonia"
+### num : a character with values : "best", "worst" ; or an integer giving desired rank
+
+##Value: 
+### Returns a data frame with first column as hospital name and second column as state
+
 rankall <- function(outcome, num="best"){
         
         data <- read.csv("outcome-of-care-measures.csv",
