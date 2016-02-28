@@ -43,5 +43,5 @@ rankhospital <- function(state,outcome,num="best"){
         else
                 best_hosp <- red_data$Hospital.Name[sort_seq[num]]
         
-        best_hosp  # hospital with least number of deaths for outcome
+        best_hosp  # hospital in given state with ranking "num" for outcome 
 }
